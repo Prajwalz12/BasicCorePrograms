@@ -1,12 +1,23 @@
 ﻿using System;
 
-namespace BasicCorePrograms_Day5
+namespace Csharpbasic
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to Basic Core Programs!");
+            int coin;
+
+            Random rng = new Random();
+            coin = rng.Next(0, 2);
+            if (coin == 0)
+            {
+                Console.Write("Tails");
+            }
+            else
+            {
+                Console.Write("Heads");
+            }
         }
     }
 }
