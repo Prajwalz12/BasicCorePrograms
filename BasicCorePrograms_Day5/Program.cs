@@ -4,20 +4,45 @@ namespace Csharpbasic
 {
     class Program
     {
-
         static void Main(string[] args)
         {
+            int first, second, third;
 
-            string alphabet;
-            alphabet = Console.ReadLine();
-            if (alphabet == "a" || alphabet == "e" || alphabet == "i" || alphabet == "o" || alphabet == "u")
+
+            Console.WriteLine("Enter the first number : ");
+            first = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Enter the second number : ");
+            second = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Enter the third number : ");
+            third = int.Parse(Console.ReadLine());
+
+
+            if (first > second)
             {
-                Console.WriteLine($"{alphabet} is a vowel");
+
+                if (first > third)
+                {
+                    Console.WriteLine("largest number : " + first);
+                }
+                else
+                {
+                    Console.WriteLine("largest number : " + third);
+                }
             }
             else
             {
-                Console.WriteLine($"{alphabet} is a consonant");
+                if (second > third)
+                {
+                    Console.WriteLine("largest number : " + second);
+                }
+                else
+                {
+                    Console.WriteLine("largest number : " + third);
+                }
             }
+
         }
 
     }
