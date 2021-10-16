@@ -1,19 +1,23 @@
-﻿sing System;
+﻿using System;
 
 namespace Csharpbasic
 {
     class Program
     {
+
         static void Main(string[] args)
         {
-            int n;
-            Console.Write("Enter no", n);
-            if (n % 2 == 0)
 
-                Console.Write("No is Even");
-
+            string alphabet;
+            alphabet = Console.ReadLine();
+            if (alphabet == "a" || alphabet == "e" || alphabet == "i" || alphabet == "o" || alphabet == "u")
+            {
+                Console.WriteLine($"{alphabet} is a vowel");
+            }
             else
-                Console.Write("No is odd");
+            {
+                Console.WriteLine($"{alphabet} is a consonant");
+            }
         }
 
     }
