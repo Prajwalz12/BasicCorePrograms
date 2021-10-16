@@ -6,18 +6,14 @@ namespace Csharpbasic
     {
         static void Main(string[] args)
         {
-            int coin;
-
-            Random rng = new Random();
-            coin = rng.Next(0, 2);
-            if (coin == 0)
-            {
-                Console.Write("Tails");
-            }
+            Console.WriteLine("Enter Year : ");
+            int Year = int.Parse(Console.ReadLine());
+            if (((Year % 4 == 0) && (Year % 100 != 0)) || (Year % 400 == 0))
+                Console.WriteLine("{0} is a Leap Year.", Year);
             else
-            {
-                Console.Write("Heads");
-            }
+                Console.WriteLine("{0} is not a Leap Year.", Year);
+            Console.ReadLine();
         }
+
     }
 }
